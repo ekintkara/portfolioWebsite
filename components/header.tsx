@@ -72,7 +72,7 @@ export function Header() {
             )}
           </Button>
           <Button asChild>
-          <a href="/TaylanEkinKara_CV.pdf">
+          <a href="https://ekintkara.sirv.com/TaylanEkinKara_CV.pdf">
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </a>
@@ -125,7 +125,7 @@ export function Header() {
                     )}
                   </Button>
                   <Button asChild className="w-full">
-                  <a href="/TaylanEkinKara_CV.pdf">
+                  <a href="https://ekintkara.sirv.com/TaylanEkinKara_CV.pdf">
                       <Download className="mr-2 h-4 w-4" />
                       Download CV
                     </a>
