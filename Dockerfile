@@ -16,8 +16,11 @@ COPY . .
 # Build the Next.js application
 RUN npm run build
 
-# Expose the port the app runs on
-EXPOSE 3000
+# Install serve to serve the static files
+RUN npm install -g serve
 
-# Start the application
-CMD ["npm", "start"]
+# Expose the port the app runs on
+EXPOSE 5002
+
+# Start the application using serve
+CMD ["serve", "-s", "out", "-l", "5002"]
