@@ -72,7 +72,7 @@ export function Header() {
             )}
           </Button>
           <Button asChild>
-          <a href="https://tr.overleaf.com/download/project/6691af93b85cf62a2e965e8b/build/1946ea86fe4-3cc334a8a6b2bab6/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-n2d-c-f-gthm&enable_pdf_caching=true&popupDownload=true" download>
+          <a href="/TaylanEkinKara_CV.pdf">
               <Download className="mr-2 h-4 w-4" />
               Download CV
             </a>
@@ -125,7 +125,7 @@ export function Header() {
                     )}
                   </Button>
                   <Button asChild className="w-full">
-                    <a href="https://tr.overleaf.com/download/project/6691af93b85cf62a2e965e8b/build/1946ea86fe4-3cc334a8a6b2bab6/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-n2d-c-f-gthm&enable_pdf_caching=true&popupDownload=true" download>
+                  <a href="/TaylanEkinKara_CV.pdf">
                       <Download className="mr-2 h-4 w-4" />
                       Download CV
                     </a>
