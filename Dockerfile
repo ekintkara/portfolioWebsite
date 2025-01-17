@@ -19,6 +19,15 @@ RUN npm run build
 # Install serve to serve the static files
 RUN npm install -g serve
 
+# Re-run npm install to ensure next-sitemap is installed
+RUN npm install next-sitemap
+
+# Generate sitemap and robots.txt
+RUN npx next-sitemap
+
+# Install serve to serve the static files
+RUN npm install -g serve
+
 # Expose the port the app runs on
 EXPOSE 5002
 
