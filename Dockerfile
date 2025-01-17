@@ -13,17 +13,11 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+# Generate the sitemap using next-sitemap
+RUN npm run generate-sitemap
+
 # Build the Next.js application
 RUN npm run build
-
-# Install serve to serve the static files
-RUN npm install -g serve
-
-# Re-run npm install to ensure next-sitemap is installed
-RUN npm install next-sitemap
-
-# Generate sitemap and robots.txt
-RUN npx next-sitemap
 
 # Install serve to serve the static files
 RUN npm install -g serve
