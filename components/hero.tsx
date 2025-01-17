@@ -54,7 +54,7 @@ export function Hero() {
             <h1 className="flex justify-center">
               <Image
                 src="https://avatars.githubusercontent.com/u/92255945?v=4"
-                alt=""
+                alt="Taylan Ekin Kara'nın profil fotoğrafı"
                 title=""
                 width={256}
                 height={256}

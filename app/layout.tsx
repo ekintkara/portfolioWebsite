@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
+import Script from "next/script";
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -17,7 +18,16 @@ const roboto = Roboto({
 
 export const metadata: Metadata = {
   title: 'Taylan Ekin Kara | Full-Stack Software Developer',
-  description: 'Full-Stack Software Developer with expertise in .NET Core, Node.js, React, and Next.js. View my portfolio, projects, and get in touch.',
+  description: 'Full-Stack Software Developer with expertise in .NET Core, Node.js, React, and Next.js. İş birliği yapmak için bana ulaşın!',
+  keywords: [
+    "full-stack developer",
+    ".NET Core",
+    "Node.js",
+    "React",
+    "Next.js",
+    "software developer",
+    "portfolio",
+  ],
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -63,6 +73,15 @@ export default function RootLayout({
           
           <Toaster />
         </ThemeProvider>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YK9FYV7ESK" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YK9FYV7ESK');
+          `}
+        </Script>
       </body>
     </html>
   );

@@ -35,7 +35,7 @@ export function Header() {
           <Link href="/" className="-m-1.5 p-1.5 text-xl font-bold">
             <Image
               src="https://cdn-icons-png.flaticon.com/512/1336/1336890.png"
-              alt=""
+              alt="Taylan Ekin Kara logo"
               title=""
               width={256}
               height={256}

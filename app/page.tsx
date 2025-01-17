@@ -6,6 +6,9 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <h2 className="mt-8 text-center text-xl font-semibold">
+        Siz de projelerinizde yeni nesil teknolojilerle fark yaratın!
+      </h2>
     </main>
   )
 }
