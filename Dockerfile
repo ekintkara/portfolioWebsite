@@ -10,15 +10,14 @@ COPY package.json package-lock.json ./
 # Install dependencies
 RUN npm install
 
-RUN npx next build
 # Copy the rest of the application code
 COPY . .
 
-# Generate the sitemap using next-sitemap
-RUN npm run generate-sitemap
-
 # Build the Next.js application
 RUN npm run build
+
+# Generate the sitemap using next-sitemap
+RUN npm run generate-sitemap
 
 # Install serve to serve the static files
 RUN npm install -g serve
