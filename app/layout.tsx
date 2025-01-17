@@ -3,8 +3,9 @@ import type { Metadata } from 'next';
 import { Inter, Roboto } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
+import { GoogleAnalytics } from '@next/third-parties/google'
 import Script from "next/script";
-
+import Head from 'next/head';
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
@@ -73,15 +74,7 @@ export default function RootLayout({
           
           <Toaster />
         </ThemeProvider>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YK9FYV7ESK" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-YK9FYV7ESK');
-          `}
-        </Script>
+        <GoogleAnalytics gaId="G-YK9FYV7ESK" />
       </body>
     </html>
   );
