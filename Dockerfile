@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy package.json and package-lock.json
 COPY package.json package-lock.json ./
 
+# Statik dosyalar build sırasında taşınıyor mu?
+COPY public /app/public
+
 # Install dependencies
 RUN npm install
 
