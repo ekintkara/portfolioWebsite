@@ -1,5 +1,5 @@
-import { Header } from '@/components/header'
-import { Hero } from '@/components/hero'
+import { Header } from "@/components/header";
+import { Hero } from "@/components/hero";
 
 export default function Home() {
   return (
@@ -7,8 +7,8 @@ export default function Home() {
       <Header />
       <Hero />
       <h2 className="mt-8 text-center text-xl font-semibold">
-        Siz de projelerinizde yeni nesil teknolojilerle fark yaratın!
+        Le code est mon art, le futur est ma toile.
       </h2>
     </main>
-  )
+  );
 }
