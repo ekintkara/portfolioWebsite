@@ -91,26 +91,6 @@ export function Hero() {
                   LinkedIn
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <a
-                  href="https://x.com/ekintkara"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Twitter className="mr-2 h-5 w-5" />
-                  Twitter
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <a
-                  href="https://x.com/ekintkara"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Instagram className="mr-2 h-5 w-5" />
-                  Instagram
-                </a>
-              </Button>
             </div>
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button
