@@ -107,18 +107,7 @@ export function Hero() {
                   <Copy className="ml-2 h-4 w-4" />
                 )}
               </Button>
-              <Button
-                variant="ghost"
-                onClick={() => copyToClipboard("+90 507 186 34 26", "phone")}
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                +90 507 186 34 26
-                {copied === "phone" ? (
-                  <Check className="ml-2 h-4 w-4" />
-                ) : (
-                  <Copy className="ml-2 h-4 w-4" />
-                )}
-              </Button>
+             
             </div>
           </div>
         </div>
