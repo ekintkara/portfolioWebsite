@@ -1,14 +1,19 @@
-import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { EasterEggs } from "@/components/easter-eggs";
+import { ScrollToTop } from "@/components/scroll-to-top";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Header />
+    <main className="min-h-screen relative">
+      {/* ASCII Art Background */}
+      <div className="ascii-background"></div>
       <Hero />
-      <h2 className="mt-8 text-center text-xl font-semibold">
-        Le code est mon art, le futur est ma toile.
-      </h2>
+
+      {/* Scroll to Top Button */}
+      <ScrollToTop />
+
+      {/* Easter Eggs and Playful Elements */}
+      <EasterEggs />
     </main>
   );
 }
