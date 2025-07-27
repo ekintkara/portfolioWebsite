@@ -555,9 +555,9 @@ export function SnakeGame() {
             ) : (
               <>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <span className="text-2xl">
-                      {gameState.modalMessage === 'Sen bilirsin' ? '🤷‍♂️' : '😅'}
+                      {gameState.modalMessage === 'Sen bilirsin'}
                     </span>
                   </div>
                   <h3 className="text-xl font-bold mb-6 text-white">
