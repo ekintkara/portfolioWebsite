@@ -31,16 +31,14 @@ const config = {
   ],
   author: "Taylan Ekin Kara",
   email: "taylanekinkara@example.com",
-  site: "https://taylanekinkara.com",
+  site: "https://taylanekinkara.com.tr",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/taylanekinkara/",
-    linkedin: "https://www.linkedin.com/in/taylanekinkara/",
-    instagram: "https://www.instagram.com/taylanekinkara/",
-    github: "https://github.com/taylanekinkara/",
+    linkedin: "https://www.linkedin.com/in/ekintkara/",
+    github: "https://github.com/ekintkara/",
   },
 };
 export { config };
